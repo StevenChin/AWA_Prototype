@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" ng-app="awa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>AWA</title>
+  
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-responsive.min.css" >
+  <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<header ng-controller="UserController">
+		<div class="left">
+			<a href="#" class="logo awalogo"></a>
+			<div class="user">
+				<span class="name">{{user.firstName}} {{user.lastName}}</span> |
+				<span class="role">{{user.role}} at {{user.location}}</span>
+			</div>
+		</div>
+		<div class="right-pos">
+			<div class="page absenceStat">Absence Statistics</div>
+			<ul class="navigation">
+				<li class="absence"><span class="icon"></span>My Absence</li>
+				<li class="profile"><span class="icon"></span>Profile</li>
+				<li class="notification"><span class="icon"></span>Notification</li>
+				<li class="login"><span class="icon"></span>Sign Off</li>
+			</ul>
+		</div>
+	</header>
+	<div class="mainCalendar">
+		<div class="day">
+			<div class="name">Mon</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Tue</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Wed</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Thu</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Fri</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Sat</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Sun</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		
+		<div class="day">
+			<div class="name">Mon</div>
+			<div class="bar">
+				<div class="fill" style="height:25%"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Tue</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Wed</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day current">
+			<div class="name">Thu</div>
+			<div class="bar">
+				<div class="fill style="height:45%""></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Fri</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Sat</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Sun</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		
+		<div class="day">
+			<div class="name">Mon</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Tue</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Wed</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Thu</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Fri</div>
+			<div class="bar">
+				<div class="fill" style="height:75%"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Sat</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<div class="day">
+			<div class="name">Sun</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		
+		<div class="day">
+			<div class="name">Mon</div>
+			<div class="bar">
+				<div class="fill"></div>
+			</div>
+		</div>
+		
+		<div class="pointer"></div>
+	</div>
+	<div class="statusBar">
+		<table>
+			<tr>
+				<td class="wideSpan first">
+					<div class="dropdown"><div class="icon"></div></div>
+					<div class="filtername absent"><div class="icon"></div>Absent</div>
+				</td>
+				<td class="wideSpan">
+					<div class="date"><span class="day">Thu</span> 06/07</div>
+				</td>
+				<td class="wideSpan divider">
+					<div class="title">Absence<br/> Rate</div>
+					<div class="absenceRate result"><div class="up"></div>25 %</div>
+				</td>
+				<td class="wideSpan divider">
+					<div class="title">Employees<br/> Absent</div>
+					<div class="result">09</div>
+				</td>
+				<td class="wideSpan divider">
+					<div class="title">Total<br/> Cost</div>
+					<div class="result">$850</div>
+				</td>
+				<td class="wideSpan last">
+					<div class="share"><div class="icon"></div></div>
+				</td>
+				<td class="wideSpan">
+					<div class="settings"><div class="icon"></div></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="bodyContent">
+		
+		<div id="Absence" class="draggableContainer widget">
+			<div class="head block">
+				<div class="title inline">Absence: types</div>
+				<div class="dropdown inline"></div>
+				<div class="pin inline"></div>
+			</div>
+			<div class="graph piechart block">
+				<img src="img/piechart.jpg" alt="pie chart"/>
+			</div>
+			<div class="list">
+				<div class="sort">
+					<div class="">
+						<span class="label">Sort By:</span>
+						<span class="order">highest to lowest</span>
+					</div>
+					<div class="dropdown"></div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<footer>
+		
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+	<script src="lib/angular/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/directives.js"></script>
+	<script src="js/controllers/UserController.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

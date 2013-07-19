@@ -1,0 +1,388 @@
+/******************************
+ * Author Ronneil Nesbitt
+ * Created 07/18/13
+ 
+ ****************************/
+
+/*******************
+ * Global
+ *******************/
+
+body {
+	background:#f8f8f8;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+	width: 0px;
+}
+
+.logo{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+
+.right{
+	float:right;
+}
+
+.right-pos{
+	position:absolute;
+	right:0;
+}
+
+table{
+	width:100%;
+}
+
+
+/*******************
+ * Layout
+ *******************/
+header{
+	background:#333;
+	width:100%;
+	line-height:42px;
+	color:#c1c1c1;
+	font-size:13px;
+	position:relative;
+}
+
+.mainCalendar{
+	background:#fff;
+	height:62px;
+	width:100%;
+	text-align:center;
+	text-transform:uppercase;
+	position:relative;
+}
+
+.statusBar{
+	background:#333;
+	width:100%;
+	line-height: 52px;
+	color:#c8cccc;
+	text-transform:uppercase;
+	font-size: 23px;
+	padding:4px 0;
+}
+
+.bodyContent{
+	
+}
+
+footer{
+	
+}
+
+
+/*******************
+ * Header
+ *******************/
+.awalogo{
+	background: url(../img/logo_awa.png) no-repeat;
+	width:62px;
+	height:20px;
+}
+
+header .awalogo{
+	margin:0px 20px;
+	position:relative;
+	top:5px;
+}
+
+header div{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+
+header .name{
+	font-size:14px;
+	font-weight: bold;
+}
+
+header .page{
+	background-repeat:no-repeat;
+	background-position:left 8px;
+	padding:0 0 0 23px;
+	margin: 0px 15px;
+	text-transform:uppercase;
+}
+
+header .page.absenceStat{
+	background-image: url(../img/icon_absenseStat.png) ;
+}
+
+.navigation{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	margin:0 5px 0 0;
+	color:#6c6c6c;
+}
+
+.navigation li{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	border-left:2px solid #474747;
+	text-transform:uppercase;
+	padding:0 10px 0 10px;
+	font-size:12px;
+	/*cursor: pointer;*/
+}
+
+.navigation .icon{
+	background:url(../img/icon_nav.png) no-repeat;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+	position:relative;
+	top:-2px;
+	margin:0 10px 0 0;
+}
+.navigation .absence .icon{
+	background-position: 0 0;
+}
+.navigation .profile .icon{
+	background-position: -23px 0;
+}
+.navigation .notification .icon{
+	background-position: -46px 0;
+	width:25px;
+}
+.navigation .login .icon{
+	background-position: -72px 0;
+}
+
+/*******************
+ * Calendar
+ *******************/
+
+.mainCalendar .day{
+	width:4%;
+	height:100%;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	padding:0px 1px;
+	position:relative;
+}
+
+.mainCalendar .name{
+	margin:10px 0 0 0;
+	font-size:12px;
+}
+
+.mainCalendar .bar{
+	width:100%;
+	height:40px;
+	position:absolute;
+	bottom:0;
+}
+
+.mainCalendar .fill{
+	background:#a5a5a5;
+	width:100%;
+	height:60%;
+	position:absolute;
+	bottom:0;
+}
+
+.mainCalendar .day.current{
+	color:#FF9237;
+}
+
+.mainCalendar .day.current .fill{
+	background:#FF9237;
+}
+
+.mainCalendar .pointer{
+	background:url(../img/pointer_up.png);
+	width:21px;
+	height:12px;
+	position:absolute;
+	left:47.25%;
+	bottom: 0;
+}
+/*******************
+ * Status Bar
+ *******************/
+.statusBar div{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+
+.statusBar .dropdown{
+	line-height:40px;
+	padding:0 15px;
+	border-right:1px solid #595959;
+}
+
+.statusBar .wideSpan{
+	text-align:center;
+	vertical-align:middle;
+}
+
+.statusBar .divider{
+	border-left:1px solid #5b5b5b;
+}
+
+.statusBar .wideSpan.first{
+	border-right:1px solid #f7f7f7;
+	text-align:left;
+}
+
+.statusBar .wideSpan.last{
+	border-left:1px solid #f7f7f7;
+	border-right:1px solid #595959;
+}
+
+.statusBar .dropdown .icon{
+	background:url(../img/icon_statusBar.png) -4px -15px;
+	width:15px;
+	height:10px;
+}
+
+.statusBar .filtername{
+	
+}
+
+.statusBar .filtername.absent .icon{
+	background:url(../img/icon_statusBar.png) -33px -6px;
+	height: 23px;
+    width: 19px;
+    margin:0 15px;
+}
+
+.statusBar .date{
+	color:#ff9237;
+}
+
+.statusBar .date .day{
+	font-weight:bold;
+} 
+
+.statusBar .title{
+	line-height:14px;
+	font-size:11px;
+	text-align:right;
+	position: relative;
+	top:2px;
+	margin:0 10px 0 0;
+}
+
+.statusBar .result{
+	font-size:32px;
+	color:#ff9237;
+	font-weight:bold;
+}
+
+.statusBar .result.absenceRate{
+	
+}
+
+.statusBar .share{
+
+}
+
+.statusBar .share .icon{
+	background:url(../img/icon_statusBar.png) -66px -4px;
+	width:28px;
+	height:28px;
+	position: relative;
+	top:3px;
+}
+
+.statusBar .settings{
+
+}
+
+.statusBar .settings .icon{
+	background:url(../img/icon_statusBar.png) -106px -4px;
+	width:28px;
+	height:28px;
+	position: relative;
+	top:3px;
+}
+
+
+/*******************
+ * Body Content
+ *******************/
+
+.draggableContainer{
+	background:#fff;
+}
+
+.widget{
+	width:320px;
+	height:520px;
+	margin:20px;
+	text-transform:uppercase;
+	-moz-box-shadow:    3px 6px 6px 0 #e3e3e3;
+  	-webkit-box-shadow: 3px 6px 6px 0 #e3e3e3;
+  	box-shadow:         3px 6px 6px 0 #e3e3e3;
+}
+
+.widget .dropdown{
+	
+}
+
+.widget .block{
+	border-top:1px solid #f5f5f5;
+	border-bottom:1px solid #ebebeb;
+}
+
+.widget .inline{
+	
+}
+
+.widget .head{
+	border-bottom:1px solid #ebebeb;
+}
+
+.widget .head .title{
+	font-size:12px;
+	font-weight:bold;
+	line-height:40px;
+	padding:0 12px 0;
+	
+}
+
+.widget .head .dropdown{
+	
+}
+
+.widget .head .pin{
+	
+}
+
+.widget .graph{
+	
+}
+
+.widget .list{
+	
+}
+
+.widget.selected{
+	cursor:move;
+	-moz-box-shadow:    10px 6px 6px 0 #e3e3e3;
+  	-webkit-box-shadow: 10px 6px 6px 0 #e3e3e3;
+  	box-shadow:         10px 6px 6px 0 #e3e3e3;
+}
+
+.widget.selected .head{
+	background:#ff9237;
+	
+}
