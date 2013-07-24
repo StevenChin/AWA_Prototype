@@ -11,6 +11,33 @@ angular.module('awa.directives', []).
   }]);
 
 $(document).ready(function() {
+	// $('.dateSlider').children().click(function(){
+	// 	$(this).addClass('current')
+	// });
+	// $('.dateSlider').children().mouseout(function(){
+	// 	$(this).removeClass('current')
+	// });
+
+	// var start_day = 0; // set your start day to show first!
+
+	// $('.day_box').hide().eq(start_day).show();
+	// $('.mainCalendar .day').eq(start_day).addClass('active');
+
+	// var calWidth = $('#calendar').width();
+
+	// $('.mainCalendar .day').click(function(){
+
+	//     $('.mainCalendar .day').removeClass('active');
+	//     $(this).addClass('active');
+
+	//     var thisIndex = $(this).index();
+
+	//     $('.day_box').stop().hide().eq(thisIndex).show();
+	//     $('.days').stop().animate({left: '-'+calWidth*thisIndex },800);
+
+	// });
+
+
 	var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]; 
 	var weekdayNames = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
 	var str=new Date().getFullYear()+'';
