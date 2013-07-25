@@ -11,7 +11,7 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
-<body>
+<body ng-controller="PlannedAbsenceCtrl">
 	<header ng-controller="UserController">
 		<div class="left">
 			<a href="#" class="logo awalogo"></a>
@@ -359,6 +359,23 @@
 					</div>
 					<div class="cards scrollable">
 						<div class="nameCard">
+
+                            <ul class="noab" style="border-bottom: none;" ng-repeat="elem in dataset">
+                                <li>{{ elem.employee_name }}</li>
+                                <li>{{ elem.leave_reason }} - {{ calculateDifferenceInDays( elem.leave_start_date , elem.leave_end_date ) }}</li>
+                                <li class="smTxt">{{ 'Role: WAREHOUSE ASSOCIATE' }}</li>
+
+                                <ul class="icons row">
+                                    <li class="span"><img src="img/weight.png" alt="weight"></li>
+                                    <li class="span nudge"><img src="img/calculator.png" alt="calculator"></li>
+                                    <li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
+                                    <li class="span"><img src="img/razor.png" alt="razor"></li>
+                                </ul>
+
+                                </li>
+                            </ul>
+
+							<!--original markup
 							<ul class="noab">
 								<li>JOHN ANDERSON</li>
 								<li>FMLA - 5 DAYS</li>
@@ -409,7 +426,7 @@
 										<li class="span"><img src="img/razor.png" alt="razor"></li>
 									</ul>
 								</li>
-							</ul>
+							</ul>-->
 						</div>
 					</div>
 				</div>
@@ -423,7 +440,8 @@
 	</footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
-	<script src="lib/angular/angular.js"></script>
+	<script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-resource.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/services.js"></script>
 	<script src="js/controllers.js"></script>
