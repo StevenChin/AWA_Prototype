@@ -337,6 +337,8 @@ header .page.absenceStat{
 	-moz-box-shadow:    3px 6px 6px 0 #e3e3e3;
   	-webkit-box-shadow: 3px 6px 6px 0 #e3e3e3;
   	box-shadow:         3px 6px 6px 0 #e3e3e3;
+  	background:#fff;
+  	overflow:hidden;
 }
 
 .widget .dropdown{
