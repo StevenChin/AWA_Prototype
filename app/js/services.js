@@ -530,10 +530,4 @@ angular.module('awa.services', ['ngResource'])
             "certifications" : null,
             "denialReasons" : null
         } ];
-
-
-
-
-
-
     });

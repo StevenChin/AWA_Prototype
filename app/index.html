@@ -219,9 +219,6 @@
 							<span class="order">highest to lowest</span>
 						</div>
 						<div class="dropdown span1" style="float:right;"><a href="javascript:;"></a>
-							<option value=""></option>
-							<option value="Option 1">Option 1</option>
-							<option value="Option 2">Option 2</option>
 						</div>
 					</div>
 					<div class="filtering">
@@ -251,9 +248,9 @@
 							<span class="order">ABSENCE RISK</span>
 						</div>
 						<div class="dropdown span1" style="float:right;"><a href="javascript:;"></a>
-							<option value=""></option>
+							<!--<option value=""></option>
 							<option value="Option 1">Option 1</option>
-							<option value="Option 2">Option 2</option>
+							<option value="Option 2">Option 2</option> -->
 						</div>
 					</div>
 					<div class="cards scrollable">
@@ -361,9 +358,9 @@
 						<div class="nameCard">
 
                             <ul class="noab" style="border-bottom: none;" ng-repeat="elem in dataset">
-                                <li>{{ elem.employee_name }}</li>
-                                <li>{{ elem.leave_reason }} - {{ calculateDifferenceInDays( elem.leave_start_date , elem.leave_end_date ) }}</li>
-                                <li class="smTxt">{{ 'Role: WAREHOUSE ASSOCIATE' }}</li>
+                                <li ng-bind-template="{{ elem.employee_name }}"></li>
+                                <li ng-bind-template="{{ isFmla(elem) }} - {{ calculateDifferenceInDays( elem.leave_start_date , elem.leave_end_date ) }}"></li>
+                                <li class="smTxt" ng-bind-template="{{ 'Role: WAREHOUSE ASSOCIATE' }}"></li>
 
                                 <ul class="icons row">
                                     <li class="span"><img src="img/weight.png" alt="weight"></li>
@@ -371,8 +368,6 @@
                                     <li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
                                     <li class="span"><img src="img/razor.png" alt="razor"></li>
                                 </ul>
-
-                                </li>
                             </ul>
 
 							<!--original markup
