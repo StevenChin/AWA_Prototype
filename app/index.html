@@ -202,99 +202,136 @@
 	</div>
 	<div class="bodyContent row">
 		
-		<div id="Absence" class="draggableContainer widget span3">
-			<div class="head block">
-				<div class="title inline">Absence: types</div>
-				<div class="dropdown inline"></div>
-				<div class="pin inline"></div>
+		<div id="Absence" class="widget span3">
+			<div class="head block row">
+				<div class="title inline span">Absence: types</div>
+				<div class="dropdown inline span"><a href="javascript:;"></a></div>
+				<div class="pin inline span"><img src="img/tack.png" alt=""></div>
 			</div>
 			<div class="graph piechart block">
 				<img src="img/piechart.jpg" alt="pie chart"/>
 			</div>
 			<div class="list">
 				<div class="sort">
-					<div class="">
-						<span class="label">Sort By:</span>
-						<span class="order">highest to lowest</span>
+					<div class="sortBy row">
+						<div class="span" style="margin-left:0;">
+							<span class="label">Sort By:</span>
+							<span class="order">highest to lowest</span>
+						</div>
+						<div class="dropdown span1" style="float:right;"><a href="javascript:;"></a>
+							<option value=""></option>
+							<option value="Option 1">Option 1</option>
+							<option value="Option 2">Option 2</option>
+						</div>
 					</div>
-					<div class="dropdown"></div>
 					<div class="filtering">
 						<ul>
-							<li>Vacation | 35% - 04 - $250</li>
-							<li>OTHER | 27% - 04 - $250</li>
-							<li>FMLA | 30% - 03 - $250</li>
-							<li>STD | 04% - 04 - $250</li>
-							<li>LTD | 04% - 04 - $250</li>
+							<li><span class="label">Vacation |</span> 35% - 04 - $250</li>
+							<li><span class="label">OTHER |</span> 27% - 04 - $250</li>
+							<li><span class="label">FMLA |</span> 30% - 03 - $250</li>
+							<li><span class="label">STD |</span> 04% - 04 - $250</li>
+							<li><span class="label">LTD |</span> 04% - 04 - $250</li>
 						</ul>
 					</div>
 				</div>
 				
 			</div>
 		</div>
-		<div id="upAbsence" class="draggableContainer widget span3">
-			<div class="head block">
-				<div class="title inline">Unplanned Absence: (5)</div>
-				<div class="dropdown inline"></div>
-				<div class="pin inline"></div>
+		<div id="upAbsence" class="widget span3">
+			<div class="head block row">
+				<div class="title inline span">Unplanned Absence: (5)</div>
+				<div class="dropdown inline span"></div>
+				<div class="pin inline span"><img src="img/tack.png" alt=""></div>
 			</div>
-			<div class="list">
+			<div class="list scrollable">
 				<div class="sort">
-					<div class="">
-						<span class="label">Sort By:</span>
-						<span class="order">ABSENCE RISK</span>
+					<div class="sortBy abType row">
+						<div class="span" style="margin-left:0;">
+							<span class="label">Sort By:</span>
+							<span class="order">ABSENCE RISK</span>
+						</div>
+						<div class="dropdown span1" style="float:right;"><a href="javascript:;"></a>
+							<option value=""></option>
+							<option value="Option 1">Option 1</option>
+							<option value="Option 2">Option 2</option>
+						</div>
 					</div>
-					<div class="dropdown"></div>
 					<div class="cards">
 						<div class="nameCard">
-							<ul>
+							<ul class="highab">
 								<li>DAVID WALKER</li>
 								<li>INJURED ON THE JOB - 5 DAYS</li>
-								<li>ROLE: WAREHOUSE ASSOCIATE</li>
+								<li class="smTxt">ROLE: WAREHOUSE ASSOCIATE</li>
 								<li>
-									<ul class="icons">
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+									<ul class="icons row">
+										<li class="span"><img src="img/weight.png" alt="weight"></li>
+										<li class="span nudge"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
+										<li class="span"><img src="img/razor.png" alt="razor"></li>
 									</ul>
 								</li>
 							</ul>
-							<ul>
+							<ul class="medab">
 								<li>JANET BENES</li>
 								<li>OTHER - 4 DAYS <span class="helpIcon"></span></li>
-								<li>ROLE: WAREHOUSE CLERK</li>
+								<li class="smTxt">ROLE: WAREHOUSE CLERK</li>
 								<li>
-									<ul class="icons">
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+									<ul class="icons row">
+										<li class="span"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span"><img src="img/phone.png" alt="phone"></li>
+										<li class="span"><img src="img/folder.png" alt="folder"></li>
 									</ul>
 								</li>
 							</ul>
-							<ul>
+							<ul class="lowab">
 								<li>CHRIS MARROTA</li>
 								<li>SICK - 2 DAYS <span class="helpIcon"></span></li>
-								<li>ROLE: WAREHOUSE ASSOCIATE</li>
+								<li class="smTxt">ROLE: WAREHOUSE ASSOCIATE</li>
 								<li>
-									<ul class="icons">
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+									<ul class="icons row">
+										<li class="span"><img src="img/weight.png" alt="weight"></li>
+										<li class="span nudge"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
+										<li class="span"><img src="img/razor.png" alt="razor"></li>
 									</ul>
 								</li>
 							</ul>
-							<ul>
+							<ul class="lowab">
 								<li>LIVIA VENEZIANO</li>
 								<li>SICK - 1 DAY</li>
-								<li>ROLE: WAREHOUSE ASSOCIATE</li>
+								<li class="smTxt">ROLE: WAREHOUSE ASSOCIATE</li>
 								<li>
-									<ul class="icons">
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+									<ul class="icons row">
+										<li class="span"><img src="img/weight.png" alt="weight"></li>
+										<li class="span nudge"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
+										<li class="span"><img src="img/razor.png" alt="razor"></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="lowab">
+								<li>CHRIS MARROTA</li>
+								<li>SICK - 2 DAYS <span class="helpIcon"></span></li>
+								<li class="smTxt">ROLE: WAREHOUSE ASSOCIATE</li>
+								<li>
+									<ul class="icons row">
+										<li class="span"><img src="img/weight.png" alt="weight"></li>
+										<li class="span nudge"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
+										<li class="span"><img src="img/razor.png" alt="razor"></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="lowab">
+								<li>LIVIA VENEZIANO</li>
+								<li>SICK - 1 DAY</li>
+								<li class="smTxt">ROLE: WAREHOUSE ASSOCIATE</li>
+								<li>
+									<ul class="icons row">
+										<li class="span"><img src="img/weight.png" alt="weight"></li>
+										<li class="span nudge"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
+										<li class="span"><img src="img/razor.png" alt="razor"></li>
 									</ul>
 								</li>
 							</ul>
@@ -304,70 +341,72 @@
 				
 			</div>
 		</div>
-		<div id="pAbsence" class="draggableContainer widget span3">
-			<div class="head block">
-				<div class="title inline">Planned Absence: types</div>
-				<div class="dropdown inline"></div>
-				<div class="pin inline"></div>
+		<div id="pAbsence" class="widget span3">
+			<div class="head block row">
+				<div class="title inline span">Planned Absence: types</div>
+				<div class="dropdown inline span margin-left-none"></div>
+				<div class="pin inline span"><img src="img/tack.png" alt=""></div>
 			</div>
-			<div class="list">
+			<div class="list scrollable">
 				<div class="sort">
-					<div class="">
-						<span class="label">Sort By:</span>
-						<span class="order">DURATION</span>
+					<div class="sortBy abType row">
+						<div class="span" style="margin-left:0;">
+							<span class="label">Sort By:</span>
+							<span class="order">ABSENCE RISK</span>
+						</div>
+						<div class="dropdown span1" style="float:right;"><a href="javascript:;"></a>
+						</div>
 					</div>
-					<div class="dropdown"></div>
 					<div class="cards">
 						<div class="nameCard">
-							<ul>
+							<ul class="noab">
 								<li>JOHN ANDERSON</li>
 								<li>FMLA - 5 DAYS</li>
-								<li>ROLE: WAREHOUSE ASSOCIATE</li>
+								<li class="smTxt">ROLE: WAREHOUSE ASSOCIATE</li>
 								<li>
-									<ul class="icons">
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+									<ul class="icons row">
+										<li class="span"><img src="img/weight.png" alt="weight"></li>
+										<li class="span nudge"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
+										<li class="span"><img src="img/razor.png" alt="razor"></li>
 									</ul>
 								</li>
 							</ul>
-							<ul>
+							<ul class="noab">
 								<li>CHARLIE GOWER</li>
 								<li>STD - 4 DAYS</li>
-								<li>ROLE: WAREHOUSE CLERK</li>
+								<li class="smTxt">ROLE: WAREHOUSE CLERK</li>
 								<li>
-									<ul class="icons">
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+									<ul class="icons row">
+										<li class="span"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span"><img src="img/phone.png" alt="phone"></li>
+										<li class="span"><img src="img/folder.png" alt="folder"></li>
 									</ul>
 								</li>
 							</ul>
-							<ul>
+							<ul class="noab">
 								<li>RYAN GALLAGHER</li>
 								<li>FMLA - 3 DAYS</li>
-								<li>ROLE: WAREHOUSE ASSOCIATE</li>
+								<li class="smTxt">ROLE: WAREHOUSE ASSOCIATE</li>
 								<li>
-									<ul class="icons">
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+									<ul class="icons row">
+										<li class="span"><img src="img/weight.png" alt="weight"></li>
+										<li class="span nudge"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
+										<li class="span"><img src="img/razor.png" alt="razor"></li>
 									</ul>
 								</li>
 							</ul>
-							<ul>
+							<ul class="noab">
 								<li>PRASHANT AGARWAL</li>
 								<li>FMLA - 2 DAYS</li>
-								<li>ROLE: WAREHOUSE ASSOCIATE</li>
+								<li class="smTxt">ROLE: WAREHOUSE ASSOCIATE</li>
 								<li>
-									<ul class="icons">
-										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
+									<ul class="icons row">
+										<li class="span"><img src="img/weight.png" alt="weight"></li>
+										<li class="span nudge"><img src="img/calculator.png" alt="calculator"></li>
+										<li class="span nudge"><img src="img/forklift.png" alt="forklift"></li>
+										<li class="span"><img src="img/razor.png" alt="razor"></li>
 									</ul>
 								</li>
 							</ul>

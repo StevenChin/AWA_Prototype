@@ -38,6 +38,9 @@ body {
 table{
 	width:100%;
 }
+.label {
+	font-weight:bold;
+}
 
 
 /*******************
@@ -72,11 +75,14 @@ header{
 }
 
 .bodyContent{
-	
+	margin:10px;
 }
 
 footer{
 	
+}
+.margin-left-none {
+	margin-left:0 !important;
 }
 
 
@@ -326,7 +332,6 @@ header .page.absenceStat{
 
 .widget{
 	width:320px;
-	height:520px;
 	margin:20px;
 	text-transform:uppercase;
 	-moz-box-shadow:    3px 6px 6px 0 #e3e3e3;
@@ -360,18 +365,27 @@ header .page.absenceStat{
 }
 
 .widget .head .dropdown{
-	
+	position: relative;
+	margin-left: 100px;
+	top: 12px;
+	border-right: 1px solid #ebebeb;
+	padding-right: 20px;
 }
 
 .widget .head .pin{
-	
+	position:relative;
+	top:8px;
+	right:10px;
+	float:right;
 }
 
 .widget .graph{
 	
 }
 
-.widget .list{
+.widget .scrollable{
+	height:437px;
+	overflow: scroll;
 	
 }
 
@@ -385,4 +399,72 @@ header .page.absenceStat{
 .widget.selected .head{
 	background:#ff9237;
 	
+}
+.sortBy {
+	padding: 5px;
+	border-bottom:1px solid #ebebeb;
+	margin-left:0;
+}
+.sortBy span {
+	font-size:11px;
+}
+.sort .abType span {
+	padding:5px;
+}
+.dropdown {
+	margin:0;
+	border-left:1px solid #ebebeb;
+}
+.dropdown a {
+	background-image: url(../img/arrowDown.png);
+	padding: 0px 7px;
+	-webkit-appearance: none;
+	background-repeat: repeat-x;
+	position: relative;
+	top: 7px;
+	left: 10px;
+}
+.filtering li{
+	padding:10px;
+	border-bottom:1px solid #ebebeb;
+}
+.filtering li:last-child {
+	border:none;
+}
+.nameCard ul {
+	padding:5px;
+	border-bottom:1px solid #ebebeb;
+}
+.nameCard ul li {
+	padding:5px;
+}
+.nameCard ul li.smTxt {
+	font-size:11px;
+}
+.nameCard ul li:nth-child(2) {
+	border-bottom:1px dashed #ccc;
+}
+.nameCard ul li ul {
+	border:none;
+}
+.nameCard ul li ul li {
+	padding:0;
+}
+.nameCard ul li ul li:nth-child(2) {
+	border:none;
+}
+.nameCard ul.highab {
+	border-left:5px solid #f00;
+}
+.nameCard ul.medab {
+	border-left:5px solid orange;
+}
+.nameCard ul.lowab {
+	border-left:5px solid #0f0;
+}
+.nameCard ul.noab {
+	border-left:5px solid #ccc;
+}
+.nameCard ul li ul li.nudge {
+	padding-top:5px;
 }
