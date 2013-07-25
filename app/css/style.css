@@ -10,7 +10,7 @@
 
 body {
 	background:#f8f8f8;
-	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight: normal;
 }
 
@@ -41,6 +41,9 @@ table{
 .label {
 	font-weight:bold;
 }
+.upcs {
+	text-transform:uppercase;
+}
 
 
 /*******************
@@ -70,7 +73,7 @@ header{
 	line-height: 52px;
 	color:#c8cccc;
 	text-transform:uppercase;
-	font-size: 23px;
+	font-size: 24px;
 	padding:4px 0;
 }
 
@@ -288,7 +291,6 @@ header .page.absenceStat{
 }
 
 .statusBar .result{
-	font-size:32px;
 	color:#ff9237;
 	font-weight:bold;
 }
@@ -296,9 +298,16 @@ header .page.absenceStat{
 .statusBar .result.absenceRate{
 	
 }
-
+.statusBar .result .up {
+	position: relative;
+	bottom: 3px;
+	right: 4px;
+}
 .statusBar .share{
 
+}
+.statusBar .smTxt {
+	font-size:16px;
 }
 
 .statusBar .share .icon{
@@ -331,9 +340,8 @@ header .page.absenceStat{
 }
 
 .widget{
-	width:320px;
+	width:30%;
 	margin:20px;
-	text-transform:uppercase;
 	-moz-box-shadow:    3px 6px 6px 0 #e3e3e3;
   	-webkit-box-shadow: 3px 6px 6px 0 #e3e3e3;
   	box-shadow:         3px 6px 6px 0 #e3e3e3;
@@ -416,6 +424,7 @@ header .page.absenceStat{
 .dropdown {
 	margin:0;
 	border-left:1px solid #ebebeb;
+	width: 19px;
 }
 .dropdown a {
 	background-image: url(../img/arrowDown.png);
@@ -424,27 +433,48 @@ header .page.absenceStat{
 	background-repeat: repeat-x;
 	position: relative;
 	top: 7px;
-	left: 10px;
+	left: 5px;
 }
 .filtering li{
 	padding:10px;
 	border-bottom:1px solid #ebebeb;
+	font-size:14px;
 }
 .filtering li:last-child {
 	border:none;
 }
-.nameCard ul {
-	padding:5px;
+.filtering ul li img {
+	position: relative;
+	bottom: 3px;
+	float: right;
+}
+.nameCard .highab, .nameCard .medab, .nameCard .lowab, .nameCard .noab .icons {
 	border-bottom:1px solid #ebebeb;
 }
-.nameCard ul li {
+.nameCard ul {
 	padding:5px;
+	border-bottom:2px solid #fff;
+}
+.nameCard ul li {
+	padding:5px 0;
+	font-size:14px;
 }
 .nameCard ul li.smTxt {
 	font-size:11px;
 }
 .nameCard ul li:nth-child(2) {
 	border-bottom:1px dashed #ccc;
+	width:91%;
+}
+.nameCard ul li ul li:nth-child(2) {
+	width:auto;
+	border:none;
+}
+.nameCard ul li .arrowRight {
+	position: relative;
+	top: 10px;
+	float: right;
+	left: 25px;
 }
 .nameCard ul li ul {
 	border:none;
@@ -452,8 +482,12 @@ header .page.absenceStat{
 .nameCard ul li ul li {
 	padding:0;
 }
-.nameCard ul li ul li:nth-child(2) {
+.noab .icons .nobw {
 	border:none;
+	width:auto;
+}
+.noab .icons .nudge {
+	padding-top:10px;
 }
 .nameCard ul.highab {
 	border-left:5px solid #f00;
