@@ -10,6 +10,7 @@ angular.module('awa.directives', []).
     };
   }]);
 
+
 $(document).ready(function() {
 	// $('.dateSlider').children().click(function(){
 	// 	$(this).addClass('current')
