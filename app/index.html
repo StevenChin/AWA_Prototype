@@ -177,7 +177,7 @@
 					<div class="filtername absent"><div class="icon"></div>Absent</div>
 				</td>
 				<td class="wideSpan">
-					<div class="date"><span class="day">Thu</span> 06/07</div>
+					<div class="date"><span class="weekdayname day">Thu</span> <span class="month">06/07</span><span class="dayweek">06/07 </span></div>
 				</td>
 				<td class="wideSpan divider">
 					<div class="title">Absence<br/> Rate</div>
@@ -206,7 +206,7 @@
 			<div class="head block row">
 				<div class="title inline span">ABSENCE: TYPES</div>
 				<div class="dropdownTitle inline span"><a href="javascript:;"></a></div>
-				<div class="pin inline span"><img src="img/tack.png" alt=""></div>
+				<div class="pin inline span"><span class="icon tack"></span></div>
 			</div>
 			<div class="graph piechart block">
 				<img src="img/piechart.jpg" alt="pie chart"/>
@@ -248,7 +248,7 @@
 			<div class="head block row">
 				<div class="title inline span">UNPLANNED ABSENCE: (5)</div>
 				<div class="dropdownTitle inline span"></div>
-				<div class="pin inline span"><img src="img/tack.png" alt=""></div>
+				<div class="pin inline span"><span class="icon tack"></span></div>
 			</div>
 			<div class="list uppl">
 				<div class="sort">
@@ -373,7 +373,7 @@
 			<div class="head block row">
 				<div class="title inline span">PLANNED ABSENCE: ({{ dataset.length }})</div>
 				<div class="dropdownTitle inline span margin-left-none"></div>
-				<div class="pin inline span"><img src="img/tack.png" alt=""></div>
+				<div class="pin inline span"><span class="icon tack"></span></div>
 			</div>
 			<div class="list uppl">
 				<div class="sort">
@@ -394,18 +394,20 @@
 					<div class="cards scrollable">
 						<div class="nameCard">
 
-                            <ul class="noab" style="border-bottom: none;" ng-repeat="elem in dataset | orderBy:orderProp">
-                                <li class="label upcs">{{ elem.employee_name }}</li>
-                                <li class="upcs">{{ isFmla(elem) }} - {{ isDays(elem.leave_days) }}<span class="icon arrowRight right v-align-m"></span></li>
-                                <li class="smTxt">{{ 'Role: WAREHOUSE ASSOCIATE' }}</li>
-
-                                <ul class="icons row">
-                                    <li class="span"><span class="icon weight"></span></li>
-									<li class="nobw span nudge"><span class="icon calculator"></span></li>
-									<li class="span nudge"><span class="icon forklift"></span></li>
-									<li class="span nobw"><span class="icon razor"></span></li>
-                                </ul>
-                            </ul>
+                            <div class="abBorder">
+                            	<ul class="noab" style="border-bottom: none;" ng-repeat="elem in dataset | orderBy:orderProp">
+                            	    <li class="label upcs">{{ elem.employee_name }}</li>
+                            	    <li class="upcs">{{ isFmla(elem) }} - {{ isDays(elem.leave_days) }}<span class="icon arrowRight right v-align-m"></span></li>
+                            	    <li class="smTxt">{{ 'Role: WAREHOUSE ASSOCIATE' }}</li>
+                            	
+                            	    <ul class="icons row">
+                            	        <li class="span"><span class="icon weight"></span></li>
+                            										<li class="nobw span nudge"><span class="icon calculator"></span></li>
+                            										<li class="span nudge"><span class="icon forklift"></span></li>
+                            										<li class="span nobw"><span class="icon razor"></span></li>
+                            	    </ul>
+                            	</ul>
+                            </div>
 						</div>
 					</div>
 				</div>

@@ -59,7 +59,7 @@ $(document).ready(function() {
 	$('.weekdaysix').html(weekdayNames[newDate.getDay() + 5] );
 	$('.weekdayseven').html(weekdayNames[newDate.getDay() + 6] );
 	$('.month').html(newDate.getMonth()+ 1 + "/" );
-	$('.dayweek').html(newDate.getDate() + "/" );
+	$('.dayweek').html(newDate.getDate());
 	$('.dayweektwo').html(newDate.getDate() + 1 + "/" );
 	$('.dayweekthree').html(newDate.getDate() + 2 + "/" );
 	$('.dayweekfour').html(newDate.getDate() + 3 + "/" );
