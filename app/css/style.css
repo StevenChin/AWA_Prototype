@@ -44,6 +44,9 @@ table{
 .upcs {
 	text-transform:uppercase;
 }
+.v-align-m {
+	vertical-align: middle;
+}
 
 
 /*******************
@@ -357,7 +360,9 @@ header .page.absenceStat{
 	border-top:1px solid #f5f5f5;
 	border-bottom:1px solid #ebebeb;
 }
-
+.widget .cards {
+	height:400px;
+}
 .widget .inline{
 	
 }
@@ -390,13 +395,11 @@ header .page.absenceStat{
 }
 
 .widget .graph{
-	
+	margin:0 55px;
 }
 
 .widget .scrollable{
-	height:410px;
 	overflow: scroll;
-	
 }
 
 .widget.selected{
@@ -435,6 +438,9 @@ header .page.absenceStat{
 	top: 7px;
 	left: 5px;
 }
+.filtering {
+	height:174px;
+}
 .filtering li{
 	padding:10px;
 	border-bottom:1px solid #ebebeb;
@@ -448,8 +454,8 @@ header .page.absenceStat{
 	bottom: 3px;
 	float: right;
 }
-.nameCard .highab, .nameCard .medab, .nameCard .lowab, .nameCard .noab .icons {
-	border-bottom:1px solid #ebebeb;
+.nameCard .highab li:last-child, .nameCard .medab li:last-child, .nameCard .lowab li:last-child, .nameCard .noab ul {
+	border-bottom:1px solid #ebebeb;	
 }
 .nameCard .abBorder {
 	border-bottom:2px solid #fff;
@@ -468,15 +474,9 @@ header .page.absenceStat{
 	border-bottom:1px dashed #ccc;
 	width:91%;
 }
-.nameCard ul li ul li:nth-child(2) {
+.nameCard ul li.nobw {
 	width:auto;
-	border:none;
-}
-.nameCard ul li .arrowRight {
-	position: relative;
-	top: 10px;
-	float: right;
-	left: 25px;
+	border-bottom:none !important;
 }
 .nameCard ul li ul {
 	border:none;
@@ -505,4 +505,75 @@ header .page.absenceStat{
 }
 .nameCard ul li ul li.nudge {
 	padding-top:5px;
+}
+
+/* ICONS */
+.icon {
+	background-image: url(../img/sprite.png);
+	display: inline-block;
+}
+
+.arrowUp {
+	background-position: -14px -110px;
+	width: 33px;
+	height: 29px;
+}
+.arrowDown {
+	background-position: -24px -53px;
+	height: 10px;
+	width: 33px;
+}
+.uppl .arrowDown {
+	background-position: -24px -45px;
+}
+.arrowRight {
+	background-position: -15px -79px;
+	height: 29px;
+	width: 30px;
+}
+.nameCard .arrowRight {
+	background-position: -13px -70px;
+	float: right;
+	position: relative;
+	left: 15px;
+}
+.calculator {
+	background-position: -23px -139px;
+	height:30px;
+	width:30px;
+}
+.folder {
+	background-position: -23px -167px;
+	height:30px;
+	width:30px;
+}
+.forklift {
+	background-position: -23px -201px;
+	height:30px;
+	width:30px;
+}
+.helpIcon {
+	background-position: -23px -234px;
+	height: 13px;
+	width: 33px;
+}
+.phone {
+	background-position: -25px -254px;
+	height:30px;
+	width:30px;
+}
+.razor {
+	background-position: -24px -539px;
+	height:30px;
+	width:30px;
+}
+.tack {
+	background-position: -22px -580px;
+	height: 30px;
+	width: 30px;
+}
+.weight {
+	background-position: -24px -618px;
+	width:30px;
+	height:30px;
 }
