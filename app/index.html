@@ -214,11 +214,13 @@
 			<div class="list">
 				<div class="sort">
 					<div class="sortBy row block">
-						<div class="span" style="margin-left:0;">
+						<div class="dropdownSelect span1">
 							<span class="label">SORT BY:</span>
-							<span class="order">HIGHEST TO LOWEST</span>
-						</div>
-						<div class="dropdown span1" style="float:right;"><span class="icon arrowDown"></span>
+							<select name="" id="">
+								<option value=""></option>
+								<option value="Highest to Lowest">Highest to Lowest</option>
+								<option value="Lowest to Highest">Lowest to Highest</option>
+							</select>
 						</div>
 					</div>
 					<div class="filtering scrollable">
@@ -253,11 +255,15 @@
 			<div class="list uppl">
 				<div class="sort">
 					<div class="sortBy abType row">
-						<div class="span" style="margin-left:0;">
+						<div class="dropdownSelect span1">
 							<span class="label">SORT BY:</span>
-							<span class="order">ABSENCE RISK</span>
-						</div>
-						<div class="dropdown span1" style="float:right;"><span class="icon arrowDown"></span>
+							<select name="" id="">
+								<option value=""></option>
+								<option value="Name">Name</option>
+								<option value="Duration">Duration</option>
+								<option value="Absence Type">Absence Type</option>
+								<option value="Status">Status</option>
+							</select>
 						</div>
 					</div>
 					<div class="cards scrollable">
@@ -378,18 +384,15 @@
 			<div class="list uppl">
 				<div class="sort">
 					<div class="sortBy abType row">
-						<div class="span" style="margin-left:0;">
+						<div class="dropdownSelect span1">
 							<span class="label">SORT BY:</span>
-							<!--<span class="order">ABSENCE RISK</span>-->
+							<select ng-model="orderProp">
+	                            <option value="employee_name">Name</option>
+	                            <option value="leave_days">Duration</option>
+	                            <option value="leave_reason">Absence Type</option>
+	                            <option value="leave_status">Status</option>
+	                        </select>
 						</div>
-						<div class="dropdown span1" style="float:right;"><span class="icon arrowDown"></span>
-						</div>
-                        <select ng-model="orderProp">
-                            <option value="employee_name">Name</option>
-                            <option value="leave_days">Duration</option>
-                            <option value="leave_reason">Absence Type</option>
-                            <option value="leave_status">Status</option>
-                        </select>
 					</div>
 					<div class="cards scrollable">
 						<div class="nameCard">
@@ -402,9 +405,9 @@
                             	
                             	    <ul class="icons row">
                             	        <li class="span"><span class="icon weight"></span></li>
-                            										<li class="nobw span nudge"><span class="icon calculator"></span></li>
-                            										<li class="span nudge"><span class="icon forklift"></span></li>
-                            										<li class="span nobw"><span class="icon razor"></span></li>
+										<li class="nobw span nudge"><span class="icon calculator"></span></li>
+										<li class="span nudge"><span class="icon forklift"></span></li>
+										<li class="span nobw"><span class="icon razor"></span></li>
                             	    </ul>
                             	</ul>
                             </div>
