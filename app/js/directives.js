@@ -68,4 +68,21 @@ $(document).ready(function() {
 	$('.dayweekseven').html(newDate.getDate() + 6 + "/" );
 	$('.year').html(newDate.getFullYear() );
 	$('.yeartwo').html(str);
+	
+	$('.basic').click(function (e) {
+		$('#modal').removeClass('none');
+		$('#simplemodal-container').fadeIn('500');
+		$('#simplemodal-overlay').fadeIn('500');
+		$('#modal').modal();
+		return false;
+	});
+	$('.closeModal').click(function() {
+		$('#modal').fadeOut('500');
+		$('#simplemodal-container').fadeOut('500');
+		$('#simplemodal-overlay').fadeOut('500');
+	});
+	$('.details').click(function() {
+		$('.detailsCard').toggle();
+		$('.detailsArrow').toggle();
+	});
 });

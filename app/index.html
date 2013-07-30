@@ -177,7 +177,7 @@
 					<div class="filtername absent"><div class="icon"></div>Absent</div>
 				</td>
 				<td class="wideSpan">
-					<div class="date"><span class="weekdayname day">Thu</span> <span class="month">06/07</span><span class="dayweek">06/07 </span></div>
+					<div class="date"><span class="weekdayname day">&nbsp;</span> <span class="month">&nbsp;</span><span class="dayweek">&nbsp;</span></div>
 				</td>
 				<td class="wideSpan divider">
 					<div class="title">Absence<br/> Rate</div>
@@ -231,7 +231,7 @@
 							<li><span class="label">Other |</span> 27% - 04 - $250
 								<span class="icon arrowRight v-align-m right"></span>
 							</li>
-							<li><span class="label">FMLA |</span> 30% - 03 - $250
+							<li class="basic"><span class="label">FMLA |</span> 30% - 03 - $250
 								<span class="icon arrowRight v-align-m right"></span>
 							</li>
 							<li><span class="label">STD |</span> 04% - 04 - $250
@@ -417,13 +417,119 @@
 				
 			</div>
 		</div>
-
+		<div id="modal" class="none">
+			<div id="Absmodal" class="widget span4">
+				<div class="head block row">
+					<div class="title inline span">ABSENCE: TYPES</div>
+					<div class="pin inline span"><span class="icon tack"></span></div>
+				</div>
+				<div class="graph piechart">
+					<img src="img/piechart.jpg" alt="pie chart"/>
+				</div>
+				<div class="list">
+					<div class="sort">
+						<div class="sortBy row block">
+							<div class="dropdownSelect span1">
+								<span class="label">SORT BY:</span>
+								<select name="" id="">
+									<option value=""></option>
+									<option value="Highest to Lowest">Highest to Lowest</option>
+									<option value="Lowest to Highest">Lowest to Highest</option>
+								</select>
+							</div>
+						</div>
+						<div class="filtering scrollable">
+							<ul class="">
+								<li><span class="label">Vacation |</span> 35% - 04 - $250
+									<span class="icon arrowRight v-align-m right"></span>
+								</li>
+								<li><span class="label">Other |</span> 27% - 04 - $250
+									<span class="icon arrowRight v-align-m right"></span>
+								</li>
+								<li><span class="label">FMLA |</span> 30% - 03 - $250
+									<!-- <span class="icon arrowRight v-align-m right"></span> -->
+								</li>
+								<li><span class="label">STD |</span> 04% - 04 - $250
+									<span class="icon arrowRight v-align-m right"></span>
+								</li>
+								<li><span class="label">LTD |</span> 04% - 04 - $250
+									<span class="icon arrowRight v-align-m right"></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div id="FMLA" class="widget span4">
+				<div class="head block row">
+					<div class="title inline span">FMLA</div>
+					<div class="pin inline span"><span class="icon tack"></span></div>
+				</div>
+				<div class="graph">
+					<ul>
+						<li>
+							<ul class="row">
+								<li class="span"><img src="img/absentLevel.png" alt="Absent Line Chart"><br><span>Absent Level</span></li>
+								<li class="span right"><span class="lgTxt">30</span><span class="medTxt">%</span></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="row">
+								<li class="span"><img src="img/absentEmployees.png" alt="Absent Employees"><br><span>Total Absent <br>Employees</span></li>
+								<li class="span lgTxt right margin-right-ft">03</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="row nobw">
+								<li class="span"><img src="img/totalCost.png" alt=""><br><span>Total Cost</span></li>
+								<li class="span right"><span class="medTxt v-align-t">$</span><span class="lgTxt">250</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="list">
+					<div class="sort">
+						<div class="sortBy row block">
+							<div class="dropdownSelect span1">
+								<span class="label">SORT BY:</span>
+								<select name="" id="">
+									<option value=""></option>
+									<option value="Highest to Lowest">Highest to Lowest</option>
+									<option value="Lowest to Highest">Lowest to Highest</option>
+								</select>
+							</div>
+						</div>
+						<div class="filtering scrollable">
+							<ul class="">
+								<li><span class="label">JOHN ANDERSON |</span> 5 DAYS
+									<span class="icon arrowRight v-align-m right"></span>
+								</li>
+								<li><span class="label">RYAN GALLAGHER |</span> 3 DAYS
+									<span class="icon arrowRight v-align-m right"></span>
+								</li>
+								<li><span class="label">PRASHANT AGARWAL |</span> 2 DAYS
+									<span class="icon arrowRight v-align-m right"></span>
+								</li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="modalArrow"><img src="img/modalArrow.png" alt="Right Arrow for Modal"></div>
+			<div class="closeModal"><a href="javascript:;">X | Close</a></div>
+			
+		</div>
 	</div>
+
 	<footer>
 		
 	</footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+	<script src="lib/jquery/jquery.simplemodal.1.4.4.min.js"></script>
 	<script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular/angular-resource.min.js"></script>
 	<script src="js/app.js"></script>

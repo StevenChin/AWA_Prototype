@@ -24,4 +24,5 @@ angular.module('awa.controllers', [])
         $scope.isDays = function(days) {
             return days > 1 ? days + ' Days' : days + ' Day';
         }
+        
     });
